@@ -33,6 +33,8 @@ function str2buf (string) {
 };
 
 var app = {
+    socketId: -1,
+
     // Application Constructor
     initialize: function() {
         this.bindEvents();
@@ -50,7 +52,7 @@ var app = {
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-		app.sendUpdMessage();
+        app.sendUpdMessage();
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -81,6 +83,7 @@ var app = {
 
         chrome.socket.create('udp', function (socket) {
             var socketId = socket.socketId;
+            app.socketId = socketId;
          
             chrome.socket.bind(socketId, "0.0.0.0", 0, function (result) {
                 if (result != 0) {
@@ -98,5 +101,14 @@ var app = {
         });
 
         console.groupEnd();
+    },
+
+    closeSocket: function() {
+        if (app.socketId != -1) {
+            console.log('Closing socket:',app.socketId);
+            chrome.socket.destroy(app.socketId);
+        } else {
+            console.log ('Socket not open, doing nothing.');
+        }
     }
 };
