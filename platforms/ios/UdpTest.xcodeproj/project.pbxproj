@@ -11,7 +11,6 @@
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1F766FE113BBADB100FB74C0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F766FDC13BBADB100FB74C0 /* Localizable.strings */; };
 		1F766FE213BBADB100FB74C0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F766FDF13BBADB100FB74C0 /* Localizable.strings */; };
-		2741563490FD45ED84D1A2C5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7D2CDED7327488DACD123A0 /* CFNetwork.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; };
 		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
@@ -29,14 +28,15 @@
 		30A0434814DC770100060A13 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30A0434314DC770100060A13 /* Localizable.strings */; };
 		30A0434914DC770100060A13 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30A0434614DC770100060A13 /* Localizable.strings */; };
 		30FC414916E50CA1004E6F35 /* icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30FC414816E50CA1004E6F35 /* icon-72@2x.png */; };
-		3626E71127DC46C6A5EE5555 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D6C311A1AB48D4BB08A26A /* GCDAsyncUdpSocket.m */; };
 		5AEE5B35173C68D80009041E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AEE5B34173C68D80009041E /* CoreLocation.framework */; };
 		5B1594DD16A7569C00FEF299 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */; };
-		A9668D1FCDD94D788E82D314 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4982C2F75DCB470E9B0722D1 /* GCDAsyncSocket.m */; };
-		C26EB338CAD94F48BB9C4C6D /* CDVLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AF014FCC93481B87CF0E68 /* CDVLogger.m */; };
-		C4E53D2684944F50B1F5E8CB /* ChromeSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 816D546BE46942A2A5C8B95A /* ChromeSocket.m */; };
+		6890AAD2B779493BA51EC919 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F2EB698B4254B0E86F75E08 /* CFNetwork.framework */; };
+		71B31CA6AF534B668B52965A /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 6149F9972AA44505970F1F4F /* GCDAsyncSocket.m */; };
+		CFDF44045611480D8B02BE41 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA605233E524205BAA1E821 /* GCDAsyncUdpSocket.m */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
-		E57D6C87AB82479696EAB45C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 143CA9F9CDE1466D965C32E0 /* Security.framework */; };
+		DE19B5EF86E9493599C8CADB /* CDVLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A46A6552CFA4C5487B31997 /* CDVLogger.m */; };
+		F032BE353ABA43789476BE0E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32FD204DB2FC496BAFE11737 /* Security.framework */; };
+		F43E5E7F94DF4BA1AE8863E3 /* ChromeSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DC22B928104AD0A7F1400A /* ChromeSocket.m */; };
 		F840E1F1165FE0F500CFE078 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = F840E1F0165FE0F500CFE078 /* config.xml */; };
 /* End PBXBuildFile section */
 
@@ -58,13 +58,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		143CA9F9CDE1466D965C32E0 /* Security.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		1A46A6552CFA4C5487B31997 /* CDVLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVLogger.m; path = org.apache.cordova.console/CDVLogger.m; sourceTree = "<group>"; };
 		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* UdpTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UdpTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F766FDD13BBADB100FB74C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
 		1F766FE013BBADB100FB74C0 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = Localizable.strings; sourceTree = "<group>"; };
-		21EC176CDA1C4414941BFAD4 /* CDVLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVLogger.h; path = org.apache.cordova.console/CDVLogger.h; sourceTree = "<group>"; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
@@ -86,18 +85,19 @@
 		30A0434714DC770100060A13 /* se */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = se; path = Localizable.strings; sourceTree = "<group>"; };
 		30FC414816E50CA1004E6F35 /* icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72@2x.png"; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* UdpTest-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UdpTest-Prefix.pch"; sourceTree = "<group>"; };
-		33AF014FCC93481B87CF0E68 /* CDVLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVLogger.m; path = org.apache.cordova.console/CDVLogger.m; sourceTree = "<group>"; };
-		40668F4714ED49E9A002C8FE /* ChromeSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChromeSocket.h; path = org.chromium.socket/ChromeSocket.h; sourceTree = "<group>"; };
-		4982C2F75DCB470E9B0722D1 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = org.chromium.socket/GCDAsyncSocket.m; sourceTree = "<group>"; };
-		4AB11FB845A34248A7697420 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = org.chromium.socket/GCDAsyncSocket.h; sourceTree = "<group>"; };
-		4E8C481732964F6FA6135F46 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = org.chromium.socket/GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		32FD204DB2FC496BAFE11737 /* Security.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		3BA605233E524205BAA1E821 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = org.chromium.socket/GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		512E7E65686D482EBAC6FB1A /* ChromeSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChromeSocket.h; path = org.chromium.socket/ChromeSocket.h; sourceTree = "<group>"; };
 		5AEE5B34173C68D80009041E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
-		816D546BE46942A2A5C8B95A /* ChromeSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChromeSocket.m; path = org.chromium.socket/ChromeSocket.m; sourceTree = "<group>"; };
+		6149F9972AA44505970F1F4F /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = org.chromium.socket/GCDAsyncSocket.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* UdpTest-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "UdpTest-Info.plist"; path = "../UdpTest-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		8F2EB698B4254B0E86F75E08 /* CFNetwork.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		97DC22B928104AD0A7F1400A /* ChromeSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChromeSocket.m; path = org.chromium.socket/ChromeSocket.m; sourceTree = "<group>"; };
+		D26066308FC24D97BB2FC4FB /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = org.chromium.socket/GCDAsyncSocket.h; sourceTree = "<group>"; };
+		D3A4CA6CD9D34469A322D487 /* CDVLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVLogger.h; path = org.apache.cordova.console/CDVLogger.h; sourceTree = "<group>"; };
 		D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x~iphone.png"; sourceTree = "<group>"; };
-		E4D6C311A1AB48D4BB08A26A /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = org.chromium.socket/GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
-		E7D2CDED7327488DACD123A0 /* CFNetwork.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		EF35A054A286423688E75E53 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = org.chromium.socket/GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = UdpTest/config.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,8 +111,8 @@
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */,
 				5AEE5B35173C68D80009041E /* CoreLocation.framework in Frameworks */,
-				E57D6C87AB82479696EAB45C /* Security.framework in Frameworks */,
-				2741563490FD45ED84D1A2C5 /* CFNetwork.framework in Frameworks */,
+				F032BE353ABA43789476BE0E /* Security.framework in Frameworks */,
+				6890AAD2B779493BA51EC919 /* CFNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,8 +204,8 @@
 				5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 				305D5FD0115AB8F900A74A75 /* MobileCoreServices.framework */,
-				143CA9F9CDE1466D965C32E0 /* Security.framework */,
-				E7D2CDED7327488DACD123A0 /* CFNetwork.framework */,
+				32FD204DB2FC496BAFE11737 /* Security.framework */,
+				8F2EB698B4254B0E86F75E08 /* CFNetwork.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -221,14 +221,14 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				33AF014FCC93481B87CF0E68 /* CDVLogger.m */,
-				21EC176CDA1C4414941BFAD4 /* CDVLogger.h */,
-				816D546BE46942A2A5C8B95A /* ChromeSocket.m */,
-				4982C2F75DCB470E9B0722D1 /* GCDAsyncSocket.m */,
-				E4D6C311A1AB48D4BB08A26A /* GCDAsyncUdpSocket.m */,
-				40668F4714ED49E9A002C8FE /* ChromeSocket.h */,
-				4AB11FB845A34248A7697420 /* GCDAsyncSocket.h */,
-				4E8C481732964F6FA6135F46 /* GCDAsyncUdpSocket.h */,
+				1A46A6552CFA4C5487B31997 /* CDVLogger.m */,
+				D3A4CA6CD9D34469A322D487 /* CDVLogger.h */,
+				97DC22B928104AD0A7F1400A /* ChromeSocket.m */,
+				6149F9972AA44505970F1F4F /* GCDAsyncSocket.m */,
+				3BA605233E524205BAA1E821 /* GCDAsyncUdpSocket.m */,
+				512E7E65686D482EBAC6FB1A /* ChromeSocket.h */,
+				D26066308FC24D97BB2FC4FB /* GCDAsyncSocket.h */,
+				EF35A054A286423688E75E53 /* GCDAsyncUdpSocket.h */,
 			);
 			name = Plugins;
 			path = UdpTest/Plugins;
@@ -396,10 +396,10 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				C26EB338CAD94F48BB9C4C6D /* CDVLogger.m in Sources */,
-				C4E53D2684944F50B1F5E8CB /* ChromeSocket.m in Sources */,
-				A9668D1FCDD94D788E82D314 /* GCDAsyncSocket.m in Sources */,
-				3626E71127DC46C6A5EE5555 /* GCDAsyncUdpSocket.m in Sources */,
+				DE19B5EF86E9493599C8CADB /* CDVLogger.m in Sources */,
+				F43E5E7F94DF4BA1AE8863E3 /* ChromeSocket.m in Sources */,
+				71B31CA6AF534B668B52965A /* GCDAsyncSocket.m in Sources */,
+				CFDF44045611480D8B02BE41 /* GCDAsyncUdpSocket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
