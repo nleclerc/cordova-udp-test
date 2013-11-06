@@ -16,6 +16,22 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+
+function buf2str (arrayBuffer) {
+    // UTF-16LE
+    return String.fromCharCode.apply(String, new Uint16Array(arrayBuffer));
+};
+ 
+function str2buf (string) {
+    // UTF-16LE
+    var buf = new ArrayBuffer(string.length * 2);
+    var bufView = new Uint16Array(buf);
+    for (var i = 0, strLen = string.length; i < strLen; i++) {
+        bufView[i] = string.charCodeAt(i);
+    }
+    return buf;
+};
+
 var app = {
     // Application Constructor
     initialize: function() {
@@ -34,6 +50,7 @@ var app = {
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+        app.sendUpdMessage();
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -45,5 +62,41 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+    },
+
+    readUdp: function(socketId) {
+        chrome.socket.recvFrom(socketId, 1024, function(recvFromInfo){
+            message = buf2str(recvFromInfo.data);
+            console.log ('Received data: ['+message+'] from '+recvFromInfo.address+':'+recvFromInfo.port);
+
+            if (message.match(/^COTCOT#/))
+                console.log('CODEC !!');
+
+            app.readUdp(socketId);
+        });
+    },
+
+    sendUpdMessage: function() {
+        console.group('Sending UDP Message.');
+
+        chrome.socket.create('udp', function (socket) {
+            var socketId = socket.socketId;
+         
+            chrome.socket.bind(socketId, "0.0.0.0", 0, function (result) {
+                if (result != 0) {
+                    chrome.socket.destroy(socketId);
+                    me.handleError("Error on bind(): ", result);
+                } else {
+
+                    app.readUdp(socketId);
+         
+                    chrome.socket.sendTo(socketId, str2buf('COTCOT'), '239.0.0.1', 5000, function(writeInfo){
+                        console.log('Sent data:',writeInfo);
+                    });
+                }
+            });
+        });
+
+        console.groupEnd();
     }
 };
